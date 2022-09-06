@@ -1,0 +1,35 @@
+syntax = "proto3";
+
+package com.book;
+
+//import "../book/book-1/book.proto3";
+import "dependency.proto3";
+
+message Books {
+  int64 isbn = 1;
+  string title = 2;
+  string author = 3;
+}
+
+message GetBookRequests {
+  int64 isbn = 1;
+}
+
+message GetBookViaAuthors {
+  string author = 1;
+}
+
+//service BookServices {
+//  rpc GetBook (GetBookRequests) returns (Books) {}
+//  rpc GetBooksViaAuthor (GetBookViaAuthors) returns (stream Books) {}
+//  rpc GetGreatestBook (stream GetBookRequests) returns (Books) {}
+//  rpc GetBooks (stream GetBookRequests) returns (stream Books) {}
+//}
+
+
+//service BookServicesInternal {
+//  rpc GetBook (GetBookRequests) returns (Books) {}
+//  rpc GetBooksViaAuthor (GetBookViaAuthors) returns (stream Books) {}
+//  rpc GetGreatestBook (stream GetBookRequests) returns (Books) {}
+//  rpc GetBooks (stream GetBookRequests) returns (stream Books) {}
+//}
