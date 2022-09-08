@@ -1,0 +1,17 @@
+id = 3ca2a70b-ad17-45b5-8a85-cf77686c6018
+
+[relations]
+
+[relations.collections]
+rootDirectory = postman/collections
+
+[relations.collections.metaData]
+
+[relations.apiDefinition]
+rootDirectory = postman/schemas
+files[] = {"path":"book/book-1/book.proto","metaData":{}}
+files[] = {"path":"third_party_proto/book_copy.proto","metaData":{}}
+files[] = {"path":"third_party_proto/dependency.proto","metaData":{}}
+
+[relations.apiDefinition.metaData]
+type = proto:3
