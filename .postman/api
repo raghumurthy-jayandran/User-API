@@ -1,14 +1,16 @@
-id = 3ca2a70b-ad17-45b5-8a85-cf77686c6018
+id = 84db98c1-6805-4ba6-b964-d95ccbe851ff
 
 [relations]
 
 [relations.collections]
 rootDirectory = postman/collections
+files[] = {"id":"ea5ec827-8931-4805-98a8-96b8cbe78967","path":"local_900611-ea5ec827-8931-4805-98a8-96b8cbe78967.json","metaData":{}}
 
 [relations.collections.metaData]
 
 [relations.apiDefinition]
 rootDirectory = postman/schemas
+files[] = {"path":"wsdl2_0.wsdl","metaData":{}}
 
 [relations.apiDefinition.metaData]
-type = openapi:3
+type = wsdl:2
