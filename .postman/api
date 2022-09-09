@@ -1,0 +1,14 @@
+id = 3ca2a70b-ad17-45b5-8a85-cf77686c6018
+
+[relations]
+
+[relations.collections]
+rootDirectory = postman/collections
+
+[relations.collections.metaData]
+
+[relations.apiDefinition]
+rootDirectory = postman/schemas
+files[] = {"path":"index.wsdl","metaData":{}}
+
+[relations.apiDefinition.metaData]
