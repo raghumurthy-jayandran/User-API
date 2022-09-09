@@ -2,8 +2,6 @@ syntax = "proto3";
 
 package com.book;
 
-import "../../third_party_proto/book_copy.proto";
-
 message Book {
   int64 isbn = 1;
   string title = 2;
