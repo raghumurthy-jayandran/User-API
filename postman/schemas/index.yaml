@@ -1,7 +1,7 @@
 openapi: '3.0.0'
 info:
   version: '2'
-  title: 'V9 : Git Linked -2'
+  title: 'V9 : Git Linked -2 - feature branch -2 '
   description: Buy or rent spacecrafts
 
 paths:
