@@ -10,6 +10,8 @@ files[] = {"path":"1_9a115d3f-454e-4c28-a8f5-21552d2999fb.json","metaData":{}}
 
 [relations.apiDefinition]
 rootDirectory = postman/schemas
+files[] = {"path":"feature-1.yaml","metaData":{}}
+files[] = {"path":"feature-2.yaml","metaData":{}}
 files[] = {"path":"index.yaml","metaData":{}}
 
 [relations.apiDefinition.metaData]
