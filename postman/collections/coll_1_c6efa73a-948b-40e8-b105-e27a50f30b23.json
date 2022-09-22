@@ -1,0 +1,203 @@
+{
+	"info": {
+		"_postman_id": "4de001e2-2eb6-43be-b00c-c74e2170d1a2",
+		"name": "coll_1",
+		"description": "Buy or rent spacecrafts",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Read a spacecraft",
+			"id": "891ef6d4-01ab-4584-93f9-556591332662",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "{{baseUrl}}/spacecrafts/:spacecraftId",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"spacecrafts",
+						":spacecraftId"
+					],
+					"variable": [
+						{
+							"id": "74706487-50f5-4141-9e69-a76049e68434",
+							"key": "spacecraftId",
+							"value": "tempor",
+							"description": "(Required) The unique identifier of the spacecraft"
+						}
+					]
+				}
+			},
+			"response": [
+				{
+					"id": "21fab49d-c5f7-413f-bc08-3a73bfba3745",
+					"name": "The spacecraft corresponding to the provided `spacecraftId`",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: apikey",
+								"key": "X-Api-Key",
+								"value": "<API Key>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/spacecrafts/:spacecraftId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"spacecrafts",
+								":spacecraftId"
+							],
+							"variable": [
+								{
+									"key": "spacecraftId",
+									"value": "tempor",
+									"description": "(Required) The unique identifier of the spacecraft"
+								}
+							]
+						}
+					},
+					"status": "OK",
+					"code": 200,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n  \"id\": \"<string>\",\n  \"name\": \"proident fugiat sed eiusmod\",\n  \"type\": \"probe\",\n  \"description\": \"ex cupidatat ad labore\"\n}"
+				},
+				{
+					"id": "90dece28-31ed-491d-a360-2e2baddd738f",
+					"name": "No spacecraft found for the provided `spacecraftId`",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: apikey",
+								"key": "X-Api-Key",
+								"value": "<API Key>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/spacecrafts/:spacecraftId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"spacecrafts",
+								":spacecraftId"
+							],
+							"variable": [
+								{
+									"key": "spacecraftId",
+									"value": "tempor",
+									"description": "(Required) The unique identifier of the spacecraft"
+								}
+							]
+						}
+					},
+					"status": "Not Found",
+					"code": 404,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n  \"message\": \"officia voluptate\"\n}"
+				},
+				{
+					"id": "5b60f2f0-05d2-440d-b448-5b2876f5eef6",
+					"name": "Unexpected error",
+					"originalRequest": {
+						"method": "GET",
+						"header": [
+							{
+								"description": "Added as a part of security scheme: apikey",
+								"key": "X-Api-Key",
+								"value": "<API Key>"
+							}
+						],
+						"url": {
+							"raw": "{{baseUrl}}/spacecrafts/:spacecraftId",
+							"host": [
+								"{{baseUrl}}"
+							],
+							"path": [
+								"spacecrafts",
+								":spacecraftId"
+							],
+							"variable": [
+								{
+									"key": "spacecraftId",
+									"value": "tempor",
+									"description": "(Required) The unique identifier of the spacecraft"
+								}
+							]
+						}
+					},
+					"status": "Internal Server Error",
+					"code": 500,
+					"_postman_previewlanguage": "json",
+					"header": [
+						{
+							"key": "Content-Type",
+							"value": "application/json"
+						}
+					],
+					"cookie": [],
+					"responseTime": null,
+					"body": "{\n  \"message\": \"officia voluptate\"\n}"
+				}
+			]
+		}
+	],
+	"auth": {
+		"type": "apikey",
+		"apikey": [
+			{
+				"key": "key",
+				"value": "X-Api-Key",
+				"type": "string"
+			},
+			{
+				"key": "value",
+				"value": "<API Key>",
+				"type": "string"
+			},
+			{
+				"key": "in",
+				"value": "header",
+				"type": "string"
+			}
+		]
+	},
+	"variable": [
+		{
+			"id": "cc2afa4c-2381-4386-b17d-0649dfcc5f3d",
+			"key": "baseUrl",
+			"value": "/",
+			"type": "string"
+		}
+	]
+}
