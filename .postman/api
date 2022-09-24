@@ -12,6 +12,7 @@ files[] = {"id":"823981-77258c20-c870-4265-843b-fef99c0ed50c","path":"local_coll
 rootDirectory = postman/schemas
 files[] = {"path":"feature-1.yaml","metaData":{}}
 files[] = {"path":"feature-2.yaml","metaData":{}}
+files[] = {"path":"feature-branch-1.yaml","metaData":{}}
 files[] = {"path":"feature-branch.yaml","metaData":{}}
 files[] = {"path":"index.yaml","metaData":{}}
 
