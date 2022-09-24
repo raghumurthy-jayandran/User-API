@@ -1,4 +1,4 @@
-id = 2bd266b2-7b6d-4119-b852-ad706e62cb0e
+id = e8bf047a-c580-40d8-ba97-f85b66c133ae
 
 [relations]
 
@@ -15,3 +15,4 @@ files[] = {"path":"feature-2.yaml","metaData":{}}
 files[] = {"path":"index.yaml","metaData":{}}
 
 [relations.apiDefinition.metaData]
+type = openapi:3
