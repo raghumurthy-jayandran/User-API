@@ -1,6 +1,6 @@
 openapi: '3.0.0'
 info:
-  version: '2'
+  version: '3'
   title: 'V9 : GIT Linked - 3- feature-branch-1 change-3'
   description: Buy or rent spacecrafts
 
