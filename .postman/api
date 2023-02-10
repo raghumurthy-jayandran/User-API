@@ -11,9 +11,9 @@ files[] = {"id":"57540-8c4d7895-34c1-4714-92e7-cc77229501ac","path":"local_coll.
 
 [relations.apiDefinition]
 rootDirectory = postman/schemas
-files[] = {"path":"feature-branch-1.yaml","metaData":{}}
-files[] = {"path":"feature-branch.yaml","metaData":{}}
 files[] = {"path":"index.yaml","metaData":{}}
+files[] = {"path":"New Folder/feature-branch-1.yaml","metaData":{}}
+files[] = {"path":"New Folder/New Folder/feature-branch.yaml","metaData":{}}
 
 [relations.apiDefinition.metaData]
 type = openapi:3

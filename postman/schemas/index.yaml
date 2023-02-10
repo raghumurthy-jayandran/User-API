@@ -1,6 +1,6 @@
 openapi: '3.0.0'
 info:
-  version: '3'
+  version: '3' 
   title: 'V9 : GIT Linked - 3- feature-branch-1 change-3'
   description: Buy or rent spacecrafts
 
@@ -8,7 +8,7 @@ paths:
   /spacecrafts/{spacecraftId}:
     parameters:
       - name: spacecraftId
-        description: The unique identifier of the spacecraft changes
+        description: The unique identifier of the spacecraft changes updated-2
         in: path
         required: true
         schema:
